@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    font-family: 'Roboto' !important;
+}
+
+
+.cardMakan > img {
+        width: 100%;
+        height: 50% !important;
+    }
+    
+@media screen and (max-width: 767px){
+    
+    .cardMakan{
+        width: 45%;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    
+    
+    .cardMakan {
+        width: 22%;
+        height: 300px;
+    }
+    
+
+}
+
+
+
