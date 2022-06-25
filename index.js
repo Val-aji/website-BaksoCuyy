@@ -1,12 +1,17 @@
 
 
 let menuBakso = document.getElementById("menuBakso");
-menuBakso.className = "border-bottom p-3 d-flex flex-wrap";
+menuBakso.className = "border-bottom p-3 d-flex flex-wrap my-2";
 
-function addCard(srcImg, namaM, hargaM) {
+let menuMieAyam = document.getElementById("menuMieAyam");
+menuMieAyam.className = "border-bottom p-3 d-flex flex-wrap my-2";
+
+let arr = [menuBakso, menuMieAyam];
+
+function addCard(parent, srcImg, namaM, hargaM) {
     let cardMakan = document.createElement("div");
     cardMakan.className = "cardMakan d-flex flex-column justify-content-between bg-secondary border rounded-bottom m-2 text-white";
-    menuBakso.appendChild(cardMakan);
+    parent.appendChild(cardMakan);
     
     let img = document.createElement("img");
     img.className = "img-fluid"
@@ -37,9 +42,12 @@ const ajax = new XMLHttpRequest();
 
 ajax.open("GET", "data.json");
 ajax.onload = () => {
-    const dataBakso = JSON.parse(ajax.responseText)[0];
-    dataBakso.map(value => {
-        addCard(value.gambar, value.nama, value.harga);
+    const dataList = JSON.parse(ajax.responseText);
+    
+    dataList.map((data, index) => {
+        data.map(value => {
+            addCard(arr[index], value.gambar, value.nama, value.harga);
+        })
     })
 }
 

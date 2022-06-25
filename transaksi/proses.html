@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-content=1">
-        <title>Keranjang Cuyy</title>
+        <title>Proses Cuyy</title>
         
-        <link rel="stylesheet" href="keranjang.css">
+        <link rel="stylesheet" href="transaksi.css">
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,15 +19,15 @@
     <body>
       <div id="container" class="d-flex" >
         
-        <nav class="">
+        <nav >
             <div id="navbar">
                 <a href="../index.html">
                     Menu
                 </a>
-                <a >
+                <a href="../keranjang/keranjang.html" >
                     Keranjang
                 </a>
-                <a href="../transaksi/proses.html">
+                <a >
                     Transaksi
                 </a>
                 <a href="../tentang/tentang.html">
@@ -42,26 +42,48 @@
             
             <div id="judulHalaman">
                  <p>
-                    Keranjang Cuyy
+                    Proses Cuyy
                 </p>
                 <button>
                     ⟩⟩
                 </button>
             </div>
             
-            <div class="p-3" id="parentCard"></div>
             
-             <div id="footer"></div>
-         </main>
-         
-       </div>
-       
-       
-       
-       <script src="../nav.js"></script>
-       <script src="./keranjang.js"></script>
+            <div id="navigasi" class="p-3 d-flex justify-content-around">
+                <a class="btn btn-primary  ">
+                    Proses
+                </a>
+                <a href="selesai.html" class="btn btn-primary  ">
+                    Selesai
+                </a>
+            </div>
+            
+            <div id="containerList" class="p-2">
+                <div class="card px-2 my-2 border border-2">
+                  <div class="d-flex p-2 ">
+                    <div class="bg-dark img "></div>
+                    <div class="informasi mx-2 d-flex flex-column w-50">
+                        <p class="lead">
+                            Bakso Anak
+                        </p>
+                        <p class="text-muted mx-2">
+                            Mie Kuning + Sawi 
+                        </p>
+                        
+                    </div>
+                   </div>
+                  <div class="d-flex justify-content-between">
+                      <p class="text-secondary">Sedang Diproses</p>
+                      <p class="text-danger">Rp50.000</p>
+                  </div>
+                </div>
+                
+                
+            </div>
+        </main>
+    </div>
+    <script src="../nav.js"></script>
+    <script src="./transaksi.js"></script>
     </body>
-    
-    
 </html>
-

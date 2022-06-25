@@ -9,18 +9,24 @@ function addCardList(imgSrc,namaL, hargaL) {
     
     let img = document.createElement("img");
     img.src = imgSrc.toString();
-    if( window.innerWidth < 768 ) {
-        img.style.width = "40%" 
-        } else {
-            img.style.width = "30%";
-        }
+    
         
     img.style.height = "150px";
     
     cardList.appendChild(img);
     
     let informasi = document.createElement("div");
-    informasi.className = "informasi d-flex flex-column m-2";
+    informasi.className = "informasi d-flex flex-column m-2 ";
+    
+    if( window.innerWidth < 768 ) {
+        img.style.width = "40%" 
+        
+    } else {
+        img.style.width = "30%";
+        informasi.className += "mx-5"
+         
+    }
+    
     cardList.appendChild(informasi);
     
     let namaList = document.createElement("p");
@@ -75,8 +81,13 @@ addCardList("img/baksoMbah.jpg", "Bakso Mbah/Kenyang", "Rp24.000");
 
 // footer
 let footer = document.getElementById("footer");
-footer.className = "position-fixed start-0 end-0 d-flex justify-content-between p-2 bg-secondary";
-
+footer.className = "position-fixed start-0 end-0 bottom-0 d-flex justify-content-between p-2 bg-secondary";
+if(window.innerWidth > 768 ) { 
+    footer.style.width = "80%";
+    footer.style.marginLeft = "20%";
+} else {
+    footer.style.width = "100%";
+}
 
 let divHarga = document.createElement("div");
 divHarga.className = "d-flex flex-column";

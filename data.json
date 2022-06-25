@@ -40,5 +40,47 @@
         "nama": "Bakso Spagheti",
         "harga": 29000
     }
+  ],
+  [
+    {
+        "gambar": "mieAyam/mieayam.jpg",
+        "nama": "Mie Ayam Biasa",
+        "harga": 15000
+    },
+    {
+        "gambar": "mieAyam/mieayamBakso.jpg",
+        "nama": "Mie Ayam Bakso",
+        "harga": 18000
+    },
+    {
+        "gambar": "mieAyam/mieayamKeluarga.jpg",
+        "nama": "Mie Ayam Paket Keluarga",
+        "harga": 32000
+    },
+    {
+        "gambar": "mieAyam/mieayamKering.jpg",
+        "nama": "Mie Ayam Kering",
+        "harga": 15000
+    },
+    {
+        "gambar": "mieAyam/mieayamLengkap.jpg",
+        "nama": "Mie Ayam Paket Lengkap",
+        "harga": 23000
+    },
+    {
+        "gambar": "mieAyam/mieayamPedas.jpg",
+        "nama": "Mie Ayam Pedas",
+        "harga": 17000
+    },
+    {
+        "gambar": "mieAyam/mieayamSedang.jpg",
+        "nama": "Mie Ayam Sedang",
+        "harga": 16000
+    },
+    {
+        "gambar": "mieAyam/mieayamTelur.jpg",
+        "nama": "Mie Ayam Telur ",
+        "harga": 18000
+    }
   ]
 ]
