@@ -65,11 +65,37 @@ function addCardList(imgSrc,namaL, hargaL) {
     radio.type ="radio";
     radio.className = "position-absolute top-0 end-0";
     cardList.appendChild(radio);
-    
-    
+
 }
 
 addCardList("img/baksoAnak.jpg", "Bakso Anak", "Rp15.000");
 addCardList("img/baksoMbah.jpg", "Bakso Mbah/Kenyang", "Rp24.000");
 
 
+
+// footer
+let footer = document.getElementById("footer");
+footer.className = "position-fixed start-0 end-0 d-flex justify-content-between p-2 bg-secondary";
+
+
+let divHarga = document.createElement("div");
+divHarga.className = "d-flex flex-column";
+footer.appendChild(divHarga);
+
+let harga = document.createElement("span");
+harga.className = "text-warning lead";
+harga.innerHTML = "Rp50.000";
+divHarga.appendChild(harga);
+
+let pajak = document.createElement("span");
+pajak.className = "text-white";
+pajak.innerHTML = "Sudah termasuk pajak";
+pajak.style.fontSize = ".8em";
+divHarga.appendChild(pajak);
+
+
+let tombolPesan = document.createElement("button");
+tombolPesan.className = "btn btn-primary btn-sm";
+tombolPesan.innerHTML = "Pesan sekarang";
+footer.appendChild(tombolPesan);
+console.info(footer);
